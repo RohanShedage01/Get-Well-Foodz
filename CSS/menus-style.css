@@ -1,0 +1,266 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #8C1007;
+}
+.brand-logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    background-color: #3E0703;
+}
+
+.brand-name{
+    font-size: 25px;
+    margin: 10px;
+    margin-right: 350px;
+    color: white;
+}
+
+.nav-items{
+    margin-left: 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: tomato;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex; /* show when toggled */
+  }
+
+  .nav-items {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+}
+
+.menu-section {
+  padding: 50px 20px;
+}
+
+.menu-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #8C1007;
+  position: relative;
+}
+
+.main-menu-title{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #8C1007;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu-card h2 {
+  font-size: 20px;
+  margin: 15px 0 5px;
+  color: #3E0703;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 10px 10px;
+}
+
+.price {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #8C1007;
+  margin-bottom: 10px;
+}
+
+.menu-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #8C1007;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-card button:hover {
+  background-color: #b91c1c;
+}
+
+.buy-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+/* Tablets (width ≤ 1024px) */
+@media (max-width: 1024px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+    margin: 10px 0;
+    display: block;
+  }
+
+  .nav-items {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .menu-title {
+    font-size: 28px;
+  }
+
+  .menu-card h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .menu-card {
+    padding: 15px;
+  }
+
+  .menu-card img {
+    height: 150px;
+  }
+
+  .menu-card h2 {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .buy-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .menu-title {
+    font-size: 22px;
+  }
+
+  .nav-bar {
+    padding: 10px;
+  }
+
+  .brand-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .buy-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

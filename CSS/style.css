@@ -32,6 +32,38 @@ body{
 
 }
 
+@media (max-width: 768px) {
+  .brand-name {
+    margin-right: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #3E0703;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-items {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
 .branding-details{
     font-size: 35px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
