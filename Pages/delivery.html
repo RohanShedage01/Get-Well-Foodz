@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Form | Get Well Foodz</title>
+  <link rel="stylesheet" href="../CSS/delivery-style.css">
+</head>
+<body>
+  <div class="delivery-container">
+    <div class="delivery-box">
+      <h2>Food Delivery Details</h2>
+      <p class="subtitle">Fill the form to get your favorite food delivered 🚚</p>
+      <form action="../index.html" method="get">
+        
+        <div class="input-group">
+          <input type="text" required>
+          <label>Full Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" required pattern="[0-9]{10}">
+          <label>Phone Number</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <textarea required></textarea>
+          <label class="textarea-label">Delivery Address</label>
+        </div>
+
+        <div class="input-group">
+          <select required>
+            <option value="">-- Select Food Item --</option>
+            <option>Chinese - Noodles</option>
+            <option>Chinese - Fried Rice</option>
+            <option>South Indian - Dosa</option>
+            <option>South Indian - Idli</option>
+            <option>Indian - Biryani</option>
+            <option>Indian - Paneer</option>
+            <option>Fast Food - Burger</option>
+            <option>Fast Food - Pizza</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <select required>
+            <option value="">-- Payment Method --</option>
+            <option>Cash on Delivery</option>
+            <option>UPI / Wallet</option>
+            <option>Credit / Debit Card</option>
+          </select>
+        </div>
+        <a href="payment.html" class="place-order-btn">Place Order</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

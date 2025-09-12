@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | GetWell Foodz</title>
+  <link rel="stylesheet" href="../CSS/payment-style.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Secure Payment</h2>
+    <form action="index.html" method="get">
+      <div class="input-group">
+        <label>Cardholder Name</label>
+        <input type="text" placeholder="Enter name on card" required>
+      </div>
+
+      <div class="input-group">
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" maxlength="16" required>
+      </div>
+
+      <div class="card-details">
+        <div class="input-group">
+          <label>Expiry Date</label>
+          <input type="text" placeholder="MM/YY" maxlength="5" required>
+        </div>
+        <div class="input-group">
+          <label>CVV</label>
+          <input type="password" placeholder="***" maxlength="3" required>
+        </div>
+      </div>
+      <a href="success.html" class="pay-btn">Pay Now</a>
+    </form>
+    <p class="back-link"><a href="delivery.html">← Go Back to Delivery</a></p>
+  </div>
+</body>
+</html>

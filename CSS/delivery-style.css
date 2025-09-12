@@ -9,24 +9,24 @@ body {
   background: linear-gradient(135deg, #8C1007, #3E0703);
 }
 
-.login-container {
+.delivery-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.login-box {
+.delivery-box {
   background: #fff;
   padding: 40px 30px;
   border-radius: 20px;
-  width: 350px;
+  width: 400px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   animation: fadeIn 1s ease-in-out, floatUp 0.8s ease-in-out;
 }
 
-.login-box h2 {
+.delivery-box h2 {
   margin-bottom: 10px;
   color: #3E0703;
 }
@@ -39,10 +39,12 @@ body {
 
 .input-group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.input-group input {
+.input-group input,
+.input-group textarea,
+.input-group select {
   width: 100%;
   padding: 12px;
   border: none;
@@ -51,9 +53,12 @@ body {
   font-size: 16px;
   background: transparent;
   transition: 0.3s;
+  resize: none;
 }
 
-.input-group input:focus {
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
   border-bottom: 2px solid #FFB22C;
 }
 
@@ -67,6 +72,12 @@ body {
   transition: 0.3s ease;
 }
 
+.textarea-label {
+  top: -20px !important;
+  font-size: 12px;
+  color: #FFB22C;
+}
+
 .input-group input:focus + label,
 .input-group input:valid + label {
   top: -10px;
@@ -74,34 +85,31 @@ body {
   color: #FFB22C;
 }
 
-.login-btn {
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -20px;
+  font-size: 12px;
+  color: #FFB22C;
+}
+
+.place-order-btn {
   display: inline-block;
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 12px 25px;
   background: tomato;
   color: white;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
   transition: 0.3s;
 }
 
-.login-btn:hover {
+.place-order-btn:hover {
   background: #FF5733;
   transform: scale(1.05);
 }
 
-
-.signup-text {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #333;
-}
-
-.signup-text a {
-  color: #8C1007;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.8); }
