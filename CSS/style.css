@@ -32,38 +32,6 @@ body{
 
 }
 
-@media (max-width: 768px) {
-  .brand-name {
-    margin-right: auto;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    background: #3E0703;
-    padding: 15px;
-    border-radius: 8px;
-    width: 200px;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-items {
-    margin: 10px 0;
-    font-size: 16px;
-    text-align: left;
-  }
-}
-
 .branding-details{
     font-size: 35px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -263,13 +231,125 @@ section {
   color: #ddd;
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 1200px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .brand-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+    margin: 5px 0;
+    display: block;
+  }
+
+  .branding-info {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .nav-items {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .branding-info {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 10px;
+  }
+
+  .brand-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .branding-details {
+    font-size: 18px;
+  }
+
+  .branding-info p {
+    font-size: 14px;
+  }
+
+  .about h3,
+  .services h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card h4 {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
   }
 }
